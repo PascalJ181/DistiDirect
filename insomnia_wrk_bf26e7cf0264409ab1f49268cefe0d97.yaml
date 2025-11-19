@@ -7,11 +7,11 @@ meta:
   description: ""
 collection:
   - url: https://distidirectengine.azurewebsites.net/api/account/login
-    name: Login - Token holen
+    name: 01 Login - Token holen
     meta:
       id: req_b56bba01031a42afbee7bee51fd0baf1
       created: 1763568163425
-      modified: 1763568351552
+      modified: 1763568774784
       isPrivate: false
       description: ""
       sortKey: -1763568163425
@@ -22,6 +22,57 @@ collection:
         {
           "username": "KarreElektronik",
           "password": "wG:Bog$CL0akq&QwJprr"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://distidirectengine.azurewebsites.net/api/search
+    name: 02 Suche MPN Hersteller
+    meta:
+      id: req_3500a5fa0aee43cd8619a93fe93fde2a
+      created: 1763568737322
+      modified: 1763568806718
+      isPrivate: false
+      description: ""
+      sortKey: -1763568737322
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "calculationName": "string",
+          "projectName": "string",
+          "projectTrackingNumber": "string",
+          "endCustomerErpId": "string",
+          "customerName": "string",
+          "baseCurrencyCode": "string",
+          "requestId": "string",
+          "requestMpns": [
+            {
+              "mpn": "string",
+              "manufacturerName": "string",
+              "quantitiesToSearch": [
+                0
+              ],
+              "maxQuantity": 0
+            }
+          ],
+          "distributorsToRequest": [
+            "string"
+          ],
+          "customerId": 0,
+          "projectId": 0,
+          "calculationId": 0
         }
     headers:
       - name: Content-Type
