@@ -1,4 +1,5 @@
 type: collection.insomnia.rest/5.0
+schema_version: "5.1"
 name: DistiDirect API
 meta:
   id: wrk_bf26e7cf0264409ab1f49268cefe0d97
@@ -11,7 +12,7 @@ collection:
     meta:
       id: req_b56bba01031a42afbee7bee51fd0baf1
       created: 1763568163425
-      modified: 1763568774784
+      modified: 1764227466095
       isPrivate: false
       description: ""
       sortKey: -1763568163425
@@ -28,6 +29,11 @@ collection:
         value: application/json
       - name: User-Agent
         value: insomnia/12.0.0
+    authentication:
+      type: bearer
+      disabled: true
+      token: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJiY2EzNzQxMC00ZDAyLTRiNDEtODViYS1jMDIyNzc4MGJhMjYiLCJ1bmlxdWVfbmFtZSI6IkthcnJlRWxla3Ryb25payIsInJvbGUiOiJBcHBVc2VyIiwibmJmIjoxNzY0MjI2NTk1LCJleHAiOjE3NjQyNDQ1OTUsImlhdCI6MTc2NDIyNjU5NX0.JMMzkAEvkDmhEUxEzcdosFGMGi0VeLL3nzIXdBTRuWTVIGXXSeyyz8ax7BpIixmAHBqJTSiHtFTNrwnpAkiBdQ
+      prefix: Bearer
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -41,7 +47,7 @@ collection:
     meta:
       id: req_3500a5fa0aee43cd8619a93fe93fde2a
       created: 1763568737322
-      modified: 1763568806718
+      modified: 1764228321144
       isPrivate: false
       description: ""
       sortKey: -1763568737322
@@ -59,8 +65,8 @@ collection:
           "requestId": "string",
           "requestMpns": [
             {
-              "mpn": "string",
-              "manufacturerName": "string",
+              "mpn": "SN74HC00AN",
+              "manufacturerName": "Texas",
               "quantitiesToSearch": [
                 0
               ],
@@ -68,7 +74,7 @@ collection:
             }
           ],
           "distributorsToRequest": [
-            "string"
+            "DigiKey", "Mouser"
           ],
           "customerId": 0,
           "projectId": 0,
@@ -79,6 +85,10 @@ collection:
         value: application/json
       - name: User-Agent
         value: insomnia/12.0.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJiY2EzNzQxMC00ZDAyLTRiNDEtODViYS1jMDIyNzc4MGJhMjYiLCJ1bmlxdWVfbmFtZSI6IkthcnJlRWxla3Ryb25payIsInJvbGUiOiJBcHBVc2VyIiwibmJmIjoxNzY0MjI2NTk1LCJleHAiOjE3NjQyNDQ1OTUsImlhdCI6MTc2NDIyNjU5NX0.JMMzkAEvkDmhEUxEzcdosFGMGi0VeLL3nzIXdBTRuWTVIGXXSeyyz8ax7BpIixmAHBqJTSiHtFTNrwnpAkiBdQ
+      prefix: Bearer
     settings:
       renderRequestBody: true
       encodeUrl: true
